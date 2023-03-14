@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.red,
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(backgroundColor: Colors.blue),
           textTheme: const TextTheme(
             headlineLarge: TextStyle(
                 color: Colors.white,

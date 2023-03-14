@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:wave_header/pages/home/wave_persistent_header_delegate.dart';
+import 'package:wave_header/pages/widgets/holed_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -37,6 +38,10 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          const SliverPadding(
+            padding: EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+            sliver: SliverToBoxAdapter(child: HoledCard()),
           ),
           SliverList(
               delegate: SliverChildBuilderDelegate(
